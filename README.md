@@ -135,6 +135,26 @@ print(op.operate(x,y))
 
 
 
+class calc:
+    def __init__(s,a,b):
+        s.a=a
+        s.b=b
+    def add(s):
+        return s.a+s.b
+    @classmethod
+    def input(cls):
+        a=int(input("enter a value:"))
+        b=int(input("enter b value:"))
+        return cls(a,b)
+    @staticmethod
+    def mul(x,y):
+        return x*y
+c=calc.input()
+print("addition-instance",c.add())
+x=int(input("enter x value for mul:"))
+y=int(input("enter y value for another number:"))
+print("multiplication-static",c.mul(x,y))
+
 
 
 
