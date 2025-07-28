@@ -122,5 +122,19 @@ print("sum:",op.add(x,y))
 
 
 
+class op:
+    @staticmethod
+    def operate(a,b):
+        print("sum:",a+b)
+        print("sum:",a-b)
+        print("sum:",a*b)
+        print("sum:",a/b)
+x=int(input("enter x value:"))
+y=int(input("enter y value:"))
+print(op.operate(x,y))
+
+
+
+
 
 
